@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            display: flex;
+            background-color: brown;
+            width: 100%;
+        }
+        #boxri{
+            background-color: yellow;
+            margin: 10px;
+            width: 50%;
+        }
+        #boxle{
+            background-color: aqua;
+            width: 50%;
+            margin: 10px;
+            width: 50%;
+        }
+        .sub{
+             height: 100px;
+        }
+        img{
+            height: 100px;    
+        }
+
+        @media (max-width:300px) {
+            #container{
+                   flex-direction: column;
+            }
+            @media (min-width: 300px) {
+                #container{
+                flex-direction: row ;
+            }
+        }
+    }
+        
+    </style>
+
+</head>
+<body>
+    <div id="container">
+        <div class="sub" id="boxle">
+            <p>TEXT 1</p>
+            <p>TEXT 2</p>
+        </div>
+        <div class="sub" id="boxri">
+            <img src="jkl.jpg" >
+        </div>
+    </div>
+</body>
+</html>
